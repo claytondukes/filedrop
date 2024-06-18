@@ -1,4 +1,4 @@
-# FileDrop Flask Application
+# Docker-based filedrop app
 
 This is a simple Flask application for uploading and listing files. The application is containerized using Docker and can be easily deployed using Docker Compose.
 
