@@ -1,0 +1,11 @@
+services:
+  web:
+    container_name: filedrop
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./templates:/app/templates
+    environment:
+      - FLASK_ENV=development
