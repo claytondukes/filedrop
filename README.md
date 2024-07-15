@@ -1,19 +1,35 @@
-# Docker-based filedrop app
+# Post-Setup operation
+
+```
+cd /downloads/filedrop
+d compose up
+```
+
+Then point the user to https://license.logzilla.net/upload
+
+After they upload, check the /downloads/filedrop/uploads directory
+
+
+
+
+# Initial Setup
+
+## Docker-based filedrop app
 
 This is a simple Flask application for uploading and listing files. The application is containerized using Docker and can be easily deployed using Docker Compose.
 
-## Features
+### Features
 
 - Upload files
 - List uploaded files
 - Download files
 
-## Prerequisites
+### Prerequisites
 
 - Docker
 - Docker Compose
 
-## Project Structure
+### Project Structure
 
 ```
 .
@@ -29,7 +45,7 @@ This is a simple Flask application for uploading and listing files. The applicat
     └── file1.txt
 ```
 
-## Setup and Running
+### Setup and Running
 
 1. **Clone the repository:**
 
@@ -48,19 +64,19 @@ This is a simple Flask application for uploading and listing files. The applicat
 
     Open your web browser and go to `http://localhost:8080`.
 
-## File Upload
+### File Upload
 
 To upload a file, use the upload form provided on the main page of the application. The uploaded files will be saved in the `uploads` directory.
 
-## File Listing
+### File Listing
 
 To list all uploaded files, navigate to the `/list` endpoint. The files will be displayed in a table format.
 
-## Download Files
+### Download Files
 
 To download a file, navigate to `http://localhost:8080/uploads/<filename>`, replacing `<filename>` with the name of the file you want to download.
 
-## Cleaning Up
+### Cleaning Up
 
 To stop the application and remove the containers, run:
 
@@ -68,7 +84,7 @@ To stop the application and remove the containers, run:
 docker compose down
 ```
 
-## Contributing
+### Contributing
 
 Feel free to open issues or submit pull requests if you have any suggestions or improvements.
 
