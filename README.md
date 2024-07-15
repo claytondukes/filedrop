@@ -5,7 +5,8 @@ cd /downloads/filedrop
 d compose up
 ```
 
-Then point the user to https://license.logzilla.net/upload
+Then point the user to https://license.logzilla.net/upload (this is set up on our proxy ssl to redirect
+license.logzilla.net/upload to this server)
 
 After they upload, check the /downloads/filedrop/uploads directory
 
